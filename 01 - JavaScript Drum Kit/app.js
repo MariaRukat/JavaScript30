@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var divs = document.querySelectorAll('.key');
     function removeTransition() {
+        console.log(event);
         if (event.propertyName !== 'transform') {
             return
         }
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         audio.currentTime = 0;
         audio.play();
     }
-    
+
     window.addEventListener('keydown', playSound);
 
 });
